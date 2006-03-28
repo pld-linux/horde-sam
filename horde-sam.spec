@@ -8,10 +8,10 @@ Summary:	Sam is the Horde module permitting to each user to manage his SpamAssas
 Name:		horde-%{_hordeapp}
 Version:	0.1
 Release:	%{?_rc:0.%{_rc}.}%{?_snap:0.%(echo %{_snap} | tr -d -).}%{_rel}
-License:	GPL v2 (CHECK IT FIRST, could be ASL)
+License:	GPL v2
 Group:		Applications/WWW
 Source0:	ftp://ftp.horde.org/pub/snaps/%{_snap}/%{_hordeapp}-HEAD-%{_snap}.tar.gz
-# Source0-md5:
+# Source0-md5:	2012b1ec6ccaf0f2e09e70998c0c9aba
 Source1:	%{_hordeapp}.conf
 URL:		http://www.horde.org/skeleton/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
@@ -20,7 +20,6 @@ BuildRequires:	tar >= 1:1.15.1
 Requires:	apache(mod_access)
 Requires:	horde >= 3.0
 Requires:	webapps
-#Obsoletes:	%{_hordeapp}
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -50,12 +49,10 @@ with Sam) please visit <http://www.horde.org/>.
 %setup -qcT -n %{?_snap:%{_hordeapp}-%{_snap}}%{!?_snap:%{_hordeapp}-%{version}%{?_rc:-%{_rc}}}
 tar zxf %{SOURCE0} --strip-components=1
 
-rm -f {,*/}.htaccess
+rm */.htaccess
 for i in config/*.dist; do
 	mv $i config/$(basename $i .dist)
 done
-# considered harmful (horde/docs/SECURITY)
-rm -f test.php
 
 %install
 rm -rf $RPM_BUILD_ROOT
