@@ -42,10 +42,6 @@ to change SpamAssassin user scores, manage blacklist and whitelist.
 User preferences can be stored in a variety of backends such as a SQL
 database, LDAP storage or on an FTP server.
 
-The Horde Project writes web applications in PHP and releases them
-under the GNU Public License. For more information (including help
-with Sam) please visit <http://www.horde.org/>.
-
 %description -l pl
 Sam to modu³ Horde pozwalaj±cy ka¿demu u¿ytkownikowi zarz±dzaæ swoimi
 regu³ami SpamAssassina oraz Amavisd-new. Dla przyk³adu, umo¿liwia
@@ -54,7 +50,6 @@ listami.
 
 Konfiguracja u¼ytkownika mo¿e byc przechowywana na ró¿nych mediach,
 takich jak baza SQL, LDAP czy server FTP.
-
 
 %prep
 %setup -qcT -n %{?_snap:%{_hordeapp}-%{_snap}}%{!?_snap:%{_hordeapp}-%{version}%{?_rc:-%{_rc}}}
