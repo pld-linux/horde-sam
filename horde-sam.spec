@@ -4,8 +4,8 @@
 %define	_rel	1
 
 %include	/usr/lib/rpm/macros.php
-Summary:	Sam is the Horde module permitting to each user to manage his SpamAssassin or Amavisd-new preferences
-Summary(pl):	Sam to modu³ Horde pozwalaj±cy ka¿demu u¿ytkownikowi zarz±dzaæ swoimi regu³ami SpamAssassina oraz Amavisd-new
+Summary:	Sam - module permitting each user to manage his SpamAssassin or Amavisd-new preferences
+Summary(pl):	Sam - modu³ pozwalaj±cy u¿ytkownikowi zarz±dzaæ swoimi regu³ami SpamAssassina oraz Amavisd-new
 Name:		horde-%{_hordeapp}
 Version:	0.1
 Release:	%{?_rc:0.%{_rc}.}%{?_snap:0.%(echo %{_snap} | tr -d -).}%{_rel}
@@ -35,7 +35,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_sysconfdir	%{_webapps}/%{_webapp}
 
 %description
-Sam is the Horde module permitting to each user to manage his
+Sam is the Horde module permitting each user to manage his
 SpamAssassin or Amavisd-new preferences. For example, it can authorize
 to change SpamAssassin user scores, manage blacklist and whitelist.
 
@@ -44,12 +44,11 @@ database, LDAP storage or on an FTP server.
 
 %description -l pl
 Sam to modu³ Horde pozwalaj±cy ka¿demu u¿ytkownikowi zarz±dzaæ swoimi
-regu³ami SpamAssassina oraz Amavisd-new. Dla przyk³adu, umo¿liwia
-zmiane punktacji SpamAssassina, zarz±dzanie czarnymi i bla³ymi
-listami.
+regu³ami SpamAssassina oraz Amavisd-new. Na przyk³ad umo¿liwia zmianê
+punktacji SpamAssassina, zarz±dzanie czarnymi i bia³ymi listami.
 
-Konfiguracja u¼ytkownika mo¿e byc przechowywana na ró¿nych mediach,
-takich jak baza SQL, LDAP czy server FTP.
+Konfiguracja u¿ytkownika mo¿e byæ przechowywana na ró¿nych mediach,
+takich jak baza SQL, LDAP czy serwer FTP.
 
 %prep
 %setup -qcT -n %{?_snap:%{_hordeapp}-%{_snap}}%{!?_snap:%{_hordeapp}-%{version}%{?_rc:-%{_rc}}}
