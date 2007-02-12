@@ -5,7 +5,7 @@
 
 %include	/usr/lib/rpm/macros.php
 Summary:	Sam - module permitting each user to manage his SpamAssassin or Amavisd-new preferences
-Summary(pl):	Sam - modu³ pozwalaj±cy u¿ytkownikowi zarz±dzaæ swoimi regu³ami SpamAssassina oraz Amavisd-new
+Summary(pl.UTF-8):   Sam - moduÅ‚ pozwalajÄ…cy uÅ¼ytkownikowi zarzÄ…dzaÄ‡ swoimi reguÅ‚ami SpamAssassina oraz Amavisd-new
 Name:		horde-%{_hordeapp}
 Version:	0.1
 Release:	%{?_rc:0.%{_rc}.}%{?_snap:0.%(echo %{_snap} | tr -d -).}%{_rel}
@@ -42,12 +42,12 @@ to change SpamAssassin user scores, manage blacklist and whitelist.
 User preferences can be stored in a variety of backends such as a SQL
 database, LDAP storage or on an FTP server.
 
-%description -l pl
-Sam to modu³ Horde pozwalaj±cy ka¿demu u¿ytkownikowi zarz±dzaæ swoimi
-regu³ami SpamAssassina oraz Amavisd-new. Na przyk³ad umo¿liwia zmianê
-punktacji SpamAssassina, zarz±dzanie czarnymi i bia³ymi listami.
+%description -l pl.UTF-8
+Sam to moduÅ‚ Horde pozwalajÄ…cy kaÅ¼demu uÅ¼ytkownikowi zarzÄ…dzaÄ‡ swoimi
+reguÅ‚ami SpamAssassina oraz Amavisd-new. Na przykÅ‚ad umoÅ¼liwia zmianÄ™
+punktacji SpamAssassina, zarzÄ…dzanie czarnymi i biaÅ‚ymi listami.
 
-Konfiguracja u¿ytkownika mo¿e byæ przechowywana na ró¿nych mediach,
+Konfiguracja uÅ¼ytkownika moÅ¼e byÄ‡ przechowywana na rÃ³Å¼nych mediach,
 takich jak baza SQL, LDAP czy serwer FTP.
 
 %prep
