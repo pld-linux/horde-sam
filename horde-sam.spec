@@ -1,5 +1,5 @@
 %define	_hordeapp sam
-%define	_snap	2006-03-28
+%define	_snap	2007-03-15
 #define	_rc		rc1
 %define	_rel	1
 
@@ -12,9 +12,9 @@ Release:	%{?_rc:0.%{_rc}.}%{?_snap:0.%(echo %{_snap} | tr -d -).}%{_rel}
 License:	GPL v2
 Group:		Applications/WWW
 Source0:	ftp://ftp.horde.org/pub/snaps/%{_snap}/%{_hordeapp}-HEAD-%{_snap}.tar.gz
-# Source0-md5:	2012b1ec6ccaf0f2e09e70998c0c9aba
+# Source0-md5:	ada76168961e20855f797e898caf88fe
 Source1:	%{_hordeapp}.conf
-URL:		http://www.horde.org/skeleton/
+URL:		http://www.horde.org/sam/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 BuildRequires:	rpmbuild(macros) >= 1.264
 BuildRequires:	tar >= 1:1.15.1
