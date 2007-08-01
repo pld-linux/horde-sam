@@ -1,7 +1,7 @@
 %define	_hordeapp sam
 %define	_snap	2007-03-15
 #define	_rc		rc1
-%define	_rel	1
+%define	_rel	2
 
 %include	/usr/lib/rpm/macros.php
 Summary:	Sam - module permitting each user to manage his SpamAssassin or Amavisd-new preferences
