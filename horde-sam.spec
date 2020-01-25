@@ -3,7 +3,6 @@
 #define	_rc		rc1
 %define	_rel	4
 
-%include	/usr/lib/rpm/macros.php
 Summary:	Sam - module permitting each user to manage his SpamAssassin or Amavisd-new preferences
 Summary(pl.UTF-8):	Sam - moduł pozwalający użytkownikowi zarządzać swoimi regułami SpamAssassina oraz Amavisd-new
 Name:		horde-%{_hordeapp}
