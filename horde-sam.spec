@@ -1,7 +1,7 @@
 %define	_hordeapp sam
 %define	_snap	2007-03-15
 #define	_rc		rc1
-%define	_rel	4
+%define	_rel	5
 
 Summary:	Sam - module permitting each user to manage his SpamAssassin or Amavisd-new preferences
 Summary(pl.UTF-8):	Sam - moduł pozwalający użytkownikowi zarządzać swoimi regułami SpamAssassina oraz Amavisd-new
